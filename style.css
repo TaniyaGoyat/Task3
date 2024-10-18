@@ -1,0 +1,237 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    text-decoration:none;
+    border:none;
+    outline:none;
+    scroll-behavior: smooth;
+    font-family: 'poppins', sans-serif;
+}
+
+:root{
+    --bg-color:#191f36;
+    --snd-bf-color:#262B40;
+    --text-color:#fff;
+    --main-color:#59B2F4;
+}
+
+body{
+    background-color: var(--bg-color);
+    color:var(--text-color);
+}
+section{
+    min-height:100vh;
+    padding:10rem 9% 2rem;
+}
+
+.header{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    padding: 2rem 9%;
+    background: var(--bg-color);
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    z-index:100;
+}
+
+.logo{
+    font-size:2.5rem;
+    color:var(--text-color);
+    font-weight: 700;
+    cursor:default;
+}
+
+.navbar{
+    display: flex;
+}
+
+.navbar a{
+    font-size:1.5rem;
+    color:var(--text-color);
+    margin-left:4rem;
+    font-weight: 700;
+}
+
+.navbar a:hover,
+.navbar a.active{
+    color: var(--main-color);
+}
+
+#menu-icon{
+    font-size:3.6rem;
+    color:var(--text-color);
+    cursor: pointer;
+    display:none;
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        display: none; /* Hide navbar links by default */
+        flex-direction: column;
+        position: absolute;
+        top: 100px; /* Adjust based on header height */
+        right: 0;
+        background-color:#fff;
+        width: 100%;
+        z-index: 10;
+    }
+
+    .navbar a {
+        color:var(--bg-color);
+        padding: 15px 20px;
+        border-bottom: 1px solid #eee;
+    }
+
+    #menu-icon {
+        display: block; /* Show menu icon on small screens */
+    }
+
+    .navbar.active {
+        display: flex; /* Show navbar when active */
+    }
+
+    .home {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .home-image {
+        margin-top: 20px;
+    }
+}
+
+
+.home-img img {
+    width: 250px; /* Adjust the size as per your requirement */
+    height: 250px; /* Ensure width and height are equal for a perfect circle */
+    object-fit: cover; /* Ensures the image covers the container */
+    border-radius: 50%; /* Makes the image circular */
+    border: 5px solid var(--main-color); /* Optional: Add a border */
+}
+
+.home-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.home-content {
+    flex: 1;
+    max-width: 50%;
+    font-size: 30px;
+    text-align: left;
+    padding-right: 2rem;
+}
+.home-content p{
+    font-size:20px;
+}
+
+.home-img {
+    flex: 1;
+    max-width: 40%; /* Adjust based on the size of the image */
+    display: flex;
+    justify-content: flex-end;
+}
+
+.home-img img {
+    width: 500px; /* Adjust size as needed */
+    height: 500px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 5px solid var(--main-color);
+}
+
+/* //Social media- */
+.social-media {
+    display: flex;
+    margin-top: 20px;
+}
+
+.social-media a {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+    background-color: #fff; /* White background for icons */
+    border-radius: 50%; /* Circular shape */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Slight shadow for depth */
+    transition: background-color 0.3s, transform 0.3s; /* Smooth transition effects */
+}
+
+.social-media a:hover {
+    background-color: #e0e0e0; /* Light gray on hover */
+    transform: scale(1.1); /* Slightly enlarge on hover */
+}
+
+/* Download CV Button */
+.btn {
+    background-color: var(--main-color); /* Main color for the button */
+    color: #fff; /* White text for contrast */
+    font-size: 1.5rem; /* Larger font size for emphasis */
+    padding: 12px 24px; /* Padding for a comfortable click area */
+    border: none; /* No default border */
+    border-radius: 5px; /* Slightly rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    text-align: center; /* Center text alignment */
+    text-decoration: none; /* Remove underline from links */
+    transition: background-color 0.3s, transform 0.3s; /* Smooth transition effects */
+    margin-top: 20px; /* Reasonable top margin for spacing */
+}
+
+.btn:hover {
+    background-color: #007bb5; /* Darker shade on hover */
+    transform: translateY(-3px); /* Lift effect on hover */
+}
+
+.btn:active {
+    transform: translateY(1px); /* Slightly depress the button on click */
+}
+
+
+
+/* Media Queries for Mobile */
+@media (max-width: 768px) {
+    .home-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .home-content {
+        max-width: 100%;
+        padding: 0;
+    }
+
+    .home-img {
+        max-width: 100%;
+        justify-content: center;
+        margin-top: 2rem;
+    }
+
+    .home-img img {
+        width: 350px;
+        height: 350px;
+    }
+}
+ 
+.home-content {
+    opacity: 0;
+    transform: translateY(20px); 
+    transition: all 0.8s ease-in-out;
+}
+
+.home-content.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+
+
+

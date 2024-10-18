@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style2.css">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+
+</head>
+<body>
+    <!-- <HEADER SECTION> -->
+        <!-- ****************************************************************** -->
+   
+    <header class="header">
+        <a href="#" class="logo">Portfolio</a>
+        <nav class="navbar">
+            <a href="#home">Home</a>
+            <a href="#about">About me</a>
+            <a href="#projects">Projects</a>
+            <a href="#skills">Skills</a>
+            <a href="#contact">Contact</a>
+        </nav>
+        <i class='bx bx-menu' id="menu-icon"></i>
+    </header>
+    <!-- ******************************************************************************* -->
+
+    <!-- HOME SECTION -->
+
+    <section class="home" id="home">
+        <div class="home-container">
+        <div class="home-content ">
+            <h3>Hi, I am</h3>
+            <h1>Taniya Goyat</h1>
+            <h3>I am a Web Developer</h3>
+            <p>I am a passionate web developer dedicated to transforming ideas into dynamic web experiences. With expertise in HTML, CSS, JavaScript, and React, I create user-friendly and responsive websites that drive results.I’m excited to share tips, tricks, and insights from my journey in web development with you all!</p>
+       
+            <div class="social-media">
+                <a href="#"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAPtJREFUSEvt1j1KQ0EUxfFfELuUNpIFiGDjDhTcgG0a05gswt4dKCoB07kDO1GXkCIBNxCMjRBLEcwTiyEo70Pfm4hv2nu5/zlnLodpiHQakbj+LHgF22jiBU94xGuakz9RvI8TrC9ARtgqC9zB5TfDSwOvYoK1qsE7uF2APuAas893Pi3D6gMMgsFTtPCWBgvrRZarO1+o82DIPRIXcp0i4B7OAsoddnNRKRQglYLH2Myo6grttN6sVucBH8+T6ygG+BD9GOA93PwWOJyTKLqIsdU1uLIAqa2urU7Ljo961qxeigBJfpUbwU2eMcwkM2gqojgv48v+/wd+BzgMNh/2+3xnAAAAAElFTkSuQmCC"/></a>
+                <a href="#"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAfpJREFUSEvt1kuoT1EUx/HPjYEkz0J5RUlKDDDxyiOSMhDJQJEyUEhRBmJgQCkJkamJt4wkE4WBxESGTChJmUh5F2fVvv/uPd1z9/73v/lP7q7dGey1f9+91l57rdOjS6OnS1zD4P8W+aEI9ThcxjLMwA+cw2l8S55MSd9PvZ7VwaNxBXvwp8D9aXiK2QPYfsB1LMBYLO9rUwdvrQzv4B62F8DvY1PmgG+wMUXjcZPHB3AhLT7Hzmq+bRBeghcFUXlXRXEqtuBBE3gVWqfCT5zARXyvQQ7ifAH4c3Lg4WChHoWvGFkTjCS5i2vVyV/hI47jZAH4THXoo3W7gbJ6X8rSwTS/IObMAvAxnMqBd2NhlVyLsLZAtMQkNK/mwBvQ7y5KlDM28b6f5cBxt5HFs4YAGBJxHRPwNweO9ZXpHU8aAvhN7BhIp6lkRkU6jL0Y08EBVteeZ0uqCbwf27C4A/BLLG06dBN4Pl5jRAfersOjdsFhvxk3EI2j3XEWRwbblGuLkxFhX4MVhfQnWI9fnYCjnUWSHUqtLceOCO3KQUOkr8cTU8WKZj4vzahe8Q5zI95rlMZLOcPe9XqoI5Ojrs4tFPiNWykqrb+Lkr1NdxyeRoOPP4vpmIPx1X1Hi4v5PhWZ26k6lbD62eSSq23B0g3D4NJIdWzXtVD/A1e4TB/sCCruAAAAAElFTkSuQmCC"/></a>
+                <a href="#"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAoxJREFUSEvl1kvozmkUwPHPXxaKGixcEkLTUGhk4X6NzcitWFiZmCkLCzaIsXFJuWXBgkgpq5mNy2ws3K8lZhrkWpSQSxILG/I7+v319uv3/N73nVf9lWfzvj2/c873Oec5l6dNB622DuL65sF98SM61YnQB9zH03qRrPK4D7ZhFnrUM1T4/hp/Y1XqECnw3MzDwxm4a5PAovg7LMLx4ocycO9M+A5+aBHarv4KPyF+v6wy8AEsaQH6AJ0xsMbGfvxeBQ6FuJ9u/xP8D0bluv9heP7/LbrjY7vdoscD8KgONDzairsI+bGYj0jGWvB1/FxjqxdepMCjcbUCvBo7EGVTuyIfYn8p7uE9RhRkwvubKfAUnE6Al2MPhmYGFmJiLncOf+YJuRMrE/oRmSsp8EycKFG8kIMiO3djRkEmdOJgcU3/5ocrmhmPS82CF+MQ1mUZuynh0VpswUb8USIzARebBUdYw+voRr8kwEcRjWdBHvqi2GTEtXxexayehpMlhqfjVN6BooWWrSNZVs+rAE/FmRQ4PgaguJZhb5ata/JwloEj46PMNiPCXlyTstw43yw4sjGycnDWCHZhdsFqeLsiS7CXuI1+JeBxuJwCx6nOJkLZXk6D8nCOyeXC2F94iH3F1lhjK3rEtRR4ZF4OCbYI5/ba1pcL1jaQlG40lBspcEymZynNfD8mV5RN1Gy0zKjPOVkOxGOhakX4n6TAsf84cUd17FZ+foOeVUMitNdnT5wNrVBKdGPU/la7XzaPYzTeyt9YX4Mf3g5p5CEQsP7ZXI0SaZ+trRwgHhUHiwaqHntd8mn0awOvy6LdGPjHENOqtDwbeVdHpg9r0uW4qudVOo2Am2Q2Jv79gT8BaMhxHzndaXwAAAAASUVORK5CYII="/></a>
+                <a href="https://www.linkedin.com/in/taniya-goyat-23137a287/"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAWxJREFUSEvt109LFlEUx/HPAy6CQAQ1ktCFLRRC2rkL8w2UL0NUqNa6EnKZBIWrdr0AQdwJCq5aRyAogoFo5qalC6m5cAeuo8QzPPPMCHpWM3c453vP75z7Z1oaslZDXLcKPILRipU4xM80ZjHjIRxTuRJ/8QQnObwIfontirPNw01jpwx4H8N40OGESoFfYQMPsZmpMdUBvG3wLzxOQLNYqwN8iX78ibAP2fO7OsCBsZXV9wueYQF9dYE74FxzbbvGwXMmkfpNfP8aVQjfJxEacBW7OMMLLGdLJyzN1EqBBzOJz6P3J8zjPZbiWCjBAS4KkB58x3gyXik4jzuB02xivxPQHD53E7yO1wir4Dl+RFgow7dugXuTHgiMRaxEWDhsjroFfhprnMf/iLfxZaAgfakaP0qcb2quMewlWYWdLdQ2WGjM0OW53YOvrMDieXz3pG5sr64N3NhlL2TYyPW2Smn/G+tW/UnUkvU/UCiAH3HBfpQAAAAASUVORK5CYII="/></a>
+            </div>
+            <br>
+        
+            <a href="/docs/Taniya Goyat (1).pdf" class="btn">View Resume</a>
+        </div>
+        <div class="home-img">
+            <img src="/imgs/taniya_goyat.png" alt="my_img">
+        </div>
+        </div>
+    </section>
+    <!-- ******************************************************************************* -->
+
+    <!-- ABOUT SECTION -->
+<section class="about" id="about">
+    <div class="about-container">
+        <div class="about-img">
+            <img src="/imgs/taniya_2.jpg" alt="About Me Image">
+        </div>
+        <div class="about-content">
+            <h2>About Me</h2>
+            <p>Hi! I'm Taniya Goyat, a passionate web developer with experience in building responsive and user-friendly websites. I love transforming ideas into reality and enjoy working with the latest web technologies. My goal is to create efficient and scalable web applications that provide a great user experience.</p>
+            <h3>Skills</h3>
+            <ul>
+                <li>HTML & CSS</li>
+                <li>JavaScript</li>
+                <li>React</li>
+                <li>Node.js</li>
+                <li>Responsive Web Design</li>
+                <li>Version Control (Git)</li>
+            </ul>
+            <!-- <h3>Personal Statement</h3>
+            <p>I believe that continuous learning is the key to success in the tech industry. I am always eager to expand my skill set and stay updated with the latest trends and best practices. I strive to bring creativity and efficiency to every project I work on.</p> -->
+        </div>
+        
+    </div>
+</section>
+
+<!-- PROJECTS SECTION -->
+<section class="projects" id="projects">
+    <h2>My Projects</h2>
+    <div class="projects-container">
+        <div class="project-card">
+            <img src="/imgs/images.jfif" alt="Project 1">
+            <h3>Simon Says</h3>
+            
+<p>developed a Simon Says game as one of my beginner projects to enhance my skills in JavaScript, HTML, and CSS. This project helped me improve my understanding of event handling</p>
+           <br>
+<a href="/Projects/simonsays.html" class="btn">View Project</a>
+        </div>
+        <div class="project-card">
+            <img src="/imgs/airbnb.jfif" alt="Project 2">
+            <h3>Airbnb Clone</h3>
+            <p>created an Airbnb website clone to practice front-end development skills and enhance my understanding of user interface creation.</p>
+            <br><br>
+            <a href="link/to/project2" class="btn">View Project</a>
+        </div>
+        <div class="project-card">
+            <img src="/imgs/tictactoe.jfif" alt="Project 3">
+            <h3>Tic Tac Toe</h3>
+        <p>created a Tic Tac Toe game to strengthen my understanding of basic game logic and DOM manipulation</p>
+           <br> 
+        <a href="Projects/Tic_Tac_Toe.html" class="btn">View Project</a>
+        </div>
+        <!-- Add more project cards as needed -->
+    </div>
+</section>
+<!-- **************************************************************************** -->
+
+<!-- SKILLS SECTION -->
+<section class="skills" id="skills">
+    <h2>My Skills</h2>
+    <div class="skills-container">
+        <!-- Frontend Skills -->
+        <div class="skill-category">
+            <h3>Frontend</h3>
+            <ul>
+                <li><i class='bx bxl-html5'></i> HTML</li>
+                <li><i class='bx bxl-css3'></i> CSS</li>
+                <li><i class='bx bxl-javascript'></i> JavaScript</li>
+            </ul>
+        </div>
+
+        <!-- Backend Skills -->
+        <div class="skill-category">
+            <h3>Backend (MERN Stack)</h3>
+            <ul>
+                <li><i class='bx bxl-nodejs'></i> Node.js</li>
+                <li><i class='bx bxl-react'></i> React</li>
+                <li><i class='bx bxl-mongodb'></i>MongoDB</li>
+                <li> Express.js</li>
+            </ul>
+        </div>
+
+        <!-- Version Control -->
+        <div class="skill-category">
+            <h3>Version Control</h3>
+            <ul>
+                <li><i class='bx bx-git-branch'></i> Git</li>
+                <li><i class='bx bxl-github'></i> GitHub</li>
+            </ul>
+        </div>
+        <div class="skill-category">
+            <h3>Problem Solving</h3>
+            <ul>
+            <li>Data Structures</li>
+            <li>Competetive programming</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<!-- CONTACT ME SECTION -->
+<section class="contact" id="contact">
+    <h2>Contact Me</h2>
+    <p id="para-up">If you have any questions or would like to collaborate, feel free to reach out!</p>
+
+    <div class="contact-container">
+        <!-- Contact Info -->
+        <div class="contact-info">
+            <p><i class='bx bx-envelope'></i>Email: <a href="#">My Email</a></p>
+            <p><i class='bx bx-phone'></i>Phone: <a href="#">+1234567890</a></p>
+            <p><i class='bx bxl-linkedin-square'></i>LinkedIn: <a href="https://www.linkedin.com/in/taniya-goyat-23137a287/" target="_blank">linkedin.com/in/taniya-goyat-23137a287</a></p>
+            <p><i class='bx bxl-github'></i> GitHub: <a href="https://github.com/TaniyaGoyat" target="_blank">github.com/TaniyaGoyat</a></p>
+        </div>
+
+        <!-- Contact Form -->
+        <div class="contact-form">
+            <form action="/scripts/mail.js" method="POST">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </div>
+</section>
+
+
+    <script src="/scripts/script.js"></script>
+</body>
+</html>                
+            
+ 
